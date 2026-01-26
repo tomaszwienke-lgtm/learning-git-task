@@ -1,0 +1,7 @@
+# Instrukcje do zadania
+
+Zadanie: pierwsze repozytorium na GitHubie
+1. Połączyć repozytorium lokalne z GitHub
+2. Wysłać pierwszy commit
+3. Wykonać dwa dodatkowe commity
+4. Utworzyć branch z pozdrowieniami
