@@ -1,52 +1,12 @@
-"""
-Program do sprawdzania palindromów.
-Palindrom to słowo, które czytane od przodu i od tyłu brzmi tak samo.
-"""
+def is_palindrome(text):
+    znaki = []
+    for znak in text:
+        if znak.isalnum():
+            znaki.append(znak.lower())
+    return znaki == znaki[::-1]
 
-def czy_palindrom(tekst):
-    """
-    Sprawdza, czy podany tekst jest palindromem.
-    """
-    # Usuwamy białe znaki i zamieniamy na małe litery
-    tekst_przygotowany = tekst.replace(" ", "").lower()
-    
-    # Sprawdzamy czy tekst od przodu jest taki sam jak od tyłu
-    return tekst_przygotowany == tekst_przygotowany[::-1]
-
-
-def main():
-    """Główna funkcja programu."""
-    print("=" * 50)
-    print("SPRAWDZANIE PALINDROMÓW")
-    print("=" * 50)
-    
-    # Testy
-    testowe_slowa = ["kajak", "potop", "anna", "python", "A to idiota"]
-    
-    for slowo in testowe_slowa:
-        if czy_palindrom(slowo):
-            print(f"✓ '{slowo}' JEST palindromem")
-        else:
-            print(f"✗ '{slowo}' NIE JEST palindromem")
-    
-    # Tryb interaktywny
-    print("\n" + "=" * 50)
-    print("TRYB INTERAKTYWNY (wpisz 'q' aby wyjść)")
-    print("=" * 50)
-    
-    while True:
-        tekst = input("\nWprowadź tekst do sprawdzenia: ")
-        
-        if tekst.lower() == 'q':
-            print("Do zobaczenia!")
-            break
-        
-        if czy_palindrom(tekst):
-            print(f"✓ '{tekst}' JEST palindromem!")
-        else:
-            print(f"✗ '{tekst}' NIE JEST palindromem.")
-
-
+# Testy z zadania
 if __name__ == "__main__":
-    main()
-
+    print(is_palindrome("kajak"))   # True
+    print(is_palindrome("potop"))   # True
+    print(is_palindrome("python"))  # False
