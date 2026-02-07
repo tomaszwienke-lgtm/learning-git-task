@@ -1,26 +1,9 @@
-# Pliki logów
-*.log
-logs/
-
-# Pliki Pythona
 __pycache__/
-*.py[cod]
-*$py.class
 *.pyc
-
-# Systemowe
-.DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
+venv/
+env/
 .idea/
-*.swp
-*.swo
-
-# Pliki tymczasowe
+.vscode/
+.DS_Store
 *.tmp
-*.temp
-
-# Pliki kalkulatora
-kalkulator/*.log
+.tmp.driveupload/
