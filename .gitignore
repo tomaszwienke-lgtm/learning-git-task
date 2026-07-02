@@ -1,9 +1,0 @@
-__pycache__/
-*.pyc
-venv/
-env/
-.idea/
-.vscode/
-.DS_Store
-*.tmp
-.tmp.driveupload/
